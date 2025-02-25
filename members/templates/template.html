@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<!-- <link rel="stylesheet" href="{% static 'myfirst.css' %}"> -->
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+    
+<!-- <ul>
+    {% for x in mymembers %}
+        <li>{{ x.firstname }}</li>
+    {% endfor %}
+</ul> -->
+
+
+<!-- <p>In views.py you can see how to import and fetch members from the database.</p> -->
+
+<!-- {% if greeting == 1 %}
+    <h1>Hello</h1>
+{% elif greeting == 2 %}
+    <h1>Welcome</h1>
+{% else %}
+    <h1>Goodbye</h1>
+{% endif %}  -->
+
+<!-- {% if 'Banana' in fruits %}
+    <h1>Banana is in fruits, so, hello!</h1>
+{% else %}
+    <h1>Goodbye</h1>
+{% endif %}  -->
+
+<!-- {% if x is y %}
+    <h1>YES</h1>
+{% else %}
+    <h1>NO</h1>
+{% endif %} -->
+
+<!-- {% if x == y %}
+    <h1>YES</h1>
+{% else %}
+    <h1>NO</h1>
+{% endif %} -->
+
+<!-- {% with var1=x var2=x %}
+    {% if var1 is var2 %}
+        <h1>YES</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}
+{% endwith %} -->
+
+<!-- {% for x in fruits %}
+    <h1>{{ x }}</h1>
+{% endfor %} -->
+
+<!-- {% for x in cars %}
+    <h1>{{ x.brand }}</h1>
+    <p>{{ x.model }}</p>
+    <p>{{ x.year }}</p>
+{% endfor %}  -->
+
+<!-- {% for x in members %}
+    <h1>{{ x.id }}</h1>
+    <p>
+        {{ x.firstname }}
+        {{ x.lastname }}
+    </p>
+{% endfor %}   -->
+
+
+
+<!-- <ul>
+    {% for x in mymembers %}
+        <li>{{ x.firstname }}</li>
+    {% endfor %}
+</ul> -->
+
+<!-- <h1>Welcome Everyone</h1>
+{% comment %}
+  <h1>Welcome ladies and gentlemen</h1>
+{% endcomment %} -->
+
+
+<!-- <h1>Welcome Everyone</h1>
+{% comment "this was the original welcome message" %}
+    <h1>Welcome ladies and gentlemen</h1>
+{% endcomment %} -->
+
+<!-- <h1>Welcome{# Everyone#}</h1> -->
+
+<!-- <h1>Hello</h1>
+
+<p>This page contains a footer in a template.</p>
+
+{% include 'footer.html' %} 
+<a href="footer.html">this is footer</a>
+
+<p>Check out the two templates to see what they look like, and views.py to see the reference to the child template.</p> -->
+
+
+<!-- {% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %}
+
+<h1>Welcome</h1>
+
+<p>This is my web site.</p>
+
+<p>Check out mymenu.html to see the HTML content of the include.</p> -->
+
+
+<!-- <p>In views.py you can see how to import and fetch members from the database.</p> -->
+
+
+<!-- <table border='1'>
+    <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+    {% for x in mymembers %}
+    <tr>
+        <td>{{ x.id }}</td>
+            <td>{{ x.firstname }}</td>
+        <td>{{ x.lastname }}</td>
+    </tr>
+    {% endfor %}
+</table> -->
+
+
+<!-- <p>The queryset object:</p> -->
+<!-- {{ mymembers }} -->
+
+<!-- <p>Loop through the items:</p>
+
+<table border='1'>
+    <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Phone Number</th>
+    </tr>
+  {% for x in mymembers %}
+    <tr>
+        <td>{{ x.id }}</td>
+        <td>{{ x.firstname }}</td>
+        <td>{{ x.lastname }}</td>
+        <td>{{ x.phone}}</td>
+    </tr>
+  {% endfor %}
+</table> -->
+
+{% for x in fruits %}
+    <h1>{{ x }}</h1>
+{% endfor %}
+<p>In myglobal.css you can see what the stylesheet looks like.</p>
+
+
+
+
+</body>
+</html>   
